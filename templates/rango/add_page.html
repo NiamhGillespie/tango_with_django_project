@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
 
-<html>
-	<head>
-		<title>Rango</title>
-	</head>
+
+	{% block title_block %}
+		Add a Page
+	{% endblock %}
+
 	
-	<body>
+	{% block body_block %}
 		<h1>Add a Page</h1>
 		
 		<div>
@@ -23,5 +25,4 @@
 				<input type="submit" name="submit" value="Add Page" />
 			</form>
 		</div>
-	</body>
-</html>
+	{% endblock %}
